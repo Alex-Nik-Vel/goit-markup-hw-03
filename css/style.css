@@ -5,11 +5,6 @@
   --booton-color: #2196f3;
   --footer-header-backgraund: #2f303a;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: "roboto", sans-serif;
   background-color: white;
@@ -20,8 +15,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  width: 1170px;
+  /* display: flex; */
 }
 .container {
   margin-left: auto;
@@ -32,13 +26,18 @@ body {
   padding-right: 15px;
 }
 /* _____header _____*/
-header {
-  margin-top: 32px;
+.p-header {
   outline: solid #ececec 1px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  /* background-color: crimson; */
 }
 
 /* logotype */
 .logo {
+  display: flex;
   color: var(--title-color);
   font-family: "Raleway";
   font-size: 26px;
@@ -50,19 +49,42 @@ header {
 }
 /* Nav */
 .nav {
+  display: flex;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .nav-item + .nav-item {
+  margin-left: 50px;
+  background-color: bisque;
+}
+.site-nav li {
+  outline: red solid;
+}
 .link,
 .contacts {
+  /* display: flex; */
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  padding-right: 50px;
 }
-
+.nav-contact {
+  display: flex;
+  margin-left: auto;
+}
+.nav-contact .contacts:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  /* display: flex; */
+  background-color: chartreuse;
+}
 .link:hover,
 .link:focus {
   color: var(--booton-color);
@@ -131,6 +153,7 @@ header {
   color: rgba(33, 33, 33, 1);
 }
 .btn-portfolio {
+  display: flex;
   margin-top: 0;
   margin-bottom: 34px;
   margin-left: auto;
@@ -217,6 +240,7 @@ header {
   margin-top: 94px;
 }
 .portfolio {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
