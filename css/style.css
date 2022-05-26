@@ -5,6 +5,11 @@
   --booton-color: #2196f3;
   --footer-header-backgraund: #2f303a;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "roboto", sans-serif;
   background-color: white;
@@ -13,8 +18,24 @@ body {
 }
 .list-ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 1170px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 6px solid green;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* _____header _____*/
+header {
+  margin-top: 32px;
+  outline: solid #ececec 1px;
+}
 
 /* logotype */
 .logo {
@@ -39,7 +60,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  padding-right: 50px;
 }
+
 .link:hover,
 .link:focus {
   color: var(--booton-color);
@@ -55,16 +78,6 @@ body {
 .contacts:hover {
   color: var(--booton-color);
 }
-/* .site-nav {
-  font-style: Medium;
-  font-size: 14px;
-  line-height: 16px;
-  line-height: 100%;
-  align-items: Left;
-  vertical-align: Top;
-  letter-spacing: 2%;
-} */
-
 /* ___hero___ */
 .title {
   color: var(--title-color);
@@ -72,14 +85,28 @@ body {
 .hero {
   background-color: var(--footer-header-backgraund);
   color: rgb(255, 255, 255);
+  padding-top: 200px;
+  margin-top: 0;
+  /* margin-bottom:94px; */
+  text-align: center;
 }
 .title-hero {
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  height: 120px;
+  width: 696px;
+  left: 452px;
+  top: 280px;
+
+  border-radius: nullpx;
 }
 /*___ BOOtON ___*/
 .button-hero {
@@ -93,13 +120,27 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  height: 50;
+  width: 200;
+  margin-top: 0;
+  margin-bottom: 200px;
 }
 .button-hero:hover,
 .button-hero:focus {
   background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
 }
+.btn-portfolio {
+  margin-top: 0;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 16px;
+  background-color: aquamarine;
+}
 .button-portfo {
+  display: flex;
+  margin-right: 8px;
   font-family: inherit;
   background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
@@ -107,6 +148,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  border-radius: 4px;
 }
 .button-portfo:hover,
 .button-portfo:focus {
@@ -116,33 +158,70 @@ body {
 }
 
 /*___section____ */
+.section-pecul {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title-pecul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
+.section-do {
+  padding-bottom: 94px;
+}
 .title-do,
 .title-teams {
   font-size: 36px;
   line-height: 1.17x;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.title-do {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .section-team {
   background-color: #f5f4fa;
+  margin-top: 0;
+  margin-bottom: 0x;
+  padding-bottom: 94px;
+}
+.title-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
 }
 .list-team {
   background-color: white;
+  margin-top: 0;
+  margin-bottom: 0px;
 }
-.section-desc {
+.team-desc {
   font-size: 14px;
   line-height: 1.7;
+  width: 270px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 /* section portfolio */
+.portfo-section {
+  margin-top: 94px;
+}
+.portfolio {
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
 .title-portfo {
   font-weight: 700;
   font-size: 18px;
@@ -158,9 +237,12 @@ body {
 .footer {
   background-color: var(--footer-header-backgraund);
   color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-addres {
   font-style: normal;
+  padding-top: 20px;
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -172,6 +254,7 @@ body {
 .footer-contacts:focus {
   color: var(--booton-color);
 }
-.footer > a {
+.footer > .container > a {
   color: white;
+  /* padding-bottom: 45px; */
 }
