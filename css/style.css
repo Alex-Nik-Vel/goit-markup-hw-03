@@ -234,13 +234,15 @@ body {
   margin-bottom: 50px;
 }
 .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 94px;
 }
 .title-team {
-  font-weight: 500;
+    font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   margin-top: 30px;
@@ -279,9 +281,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* .portfolio .p-item + .p-item {
-  margin-left: 30px;
-} */
 .portfolio .p-item:nth-child(3n) {
   margin-right: 0;
 }
