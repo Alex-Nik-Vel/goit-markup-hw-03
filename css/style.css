@@ -23,7 +23,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 6px solid green;
+  outline: 1px solid green;
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
@@ -103,7 +103,7 @@ body {
 .contacts:hover {
   color: var(--booton-color);
 }
-                 /* ___hero___ */
+/* ___hero___ */
 .title {
   color: var(--title-color);
 }
@@ -112,11 +112,10 @@ body {
   margin-right: auto;
   padding-top: 200px;
   margin-top: 0;
-/* margin-bottom:94px; */
+  /* margin-bottom:94px; */
   background-color: var(--footer-header-backgraund);
   color: rgb(255, 255, 255);
-  
-  
+
   text-align: center;
   width: 1600px;
 }
@@ -125,6 +124,7 @@ body {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -135,11 +135,11 @@ body {
   width: 696px;
   left: 452px;
   top: 280px;
-
-  border-radius: nullpx;
 }
 /*___ BOOtON ___*/
 .button-hero {
+  margin-top: 0;
+  margin-bottom: 200px;
   font-family: inherit;
   background-color: var(--booton-color);
   color: white;
@@ -150,10 +150,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  height: 50;
-  width: 200;
-  margin-top: 0;
-  margin-bottom: 200px;
+  /* height: 50;
+  min-width: 200; */
   border-radius: 4px;
 }
 .button-hero:hover,
@@ -197,15 +195,29 @@ body {
 }
 .list-pecul {
   display: flex;
+  justify-content: center;
+}
+.pecul-item {
+  padding: 0;
+  min-width: 270px;
+}
+.list-pecul .pecul-item + .pecul-item {
+  margin-left: 30px;
 }
 .title-pecul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+  /* margin-top: 0;
+  margin-bottom: 10px; */
 }
+.pecul-desc {
+  font-size: 14px;
+  line-height: 1.71;
+  }
+
+  /* <!--What are we doing--> */
 .section-do {
   padding-bottom: 94px;
 }
