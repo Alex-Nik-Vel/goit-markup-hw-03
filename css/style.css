@@ -159,18 +159,19 @@ body {
   background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
 }
+
 .btn-portfolio {
   display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 34px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 16px;
-  background-color: aquamarine;
+}
+.btn-portfolio .portfo-item + .portfo-item {
+  margin-left: 8px;
 }
 .button-portfo {
   display: flex;
-  margin-right: 8px;
   font-family: inherit;
   background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
@@ -215,9 +216,9 @@ body {
 .pecul-desc {
   font-size: 14px;
   line-height: 1.71;
-  }
+}
 
-  /* <!--What are we doing--> */
+/* <!--What are we doing--> */
 .section-do {
   padding-bottom: 94px;
 }
