@@ -221,7 +221,7 @@ body {
 .title-do,
 .title-teams {
   font-size: 36px;
-  line-height: 1.17x;
+  line-height: 1.17;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -236,7 +236,7 @@ body {
 .section-team {
   background-color: #f5f4fa;
   margin-top: 0;
-  margin-bottom: 0x;
+  margin-bottom: 0;
   padding-bottom: 94px;
 }
 .title-team {
@@ -273,10 +273,6 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
 }
-.p-item > img {
-  float: left;
-  display: block;
-}
 .portfolio .p-item {
   width: 370px;
   margin-right: 30px;
@@ -294,6 +290,7 @@ body {
 }
 
 .title-portfo {
+  padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
