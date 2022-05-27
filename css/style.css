@@ -6,10 +6,13 @@
   --footer-header-backgraund: #2f303a;
 }
 body {
+  margin-left: auto;
+  margin-right: auto;
   font-family: "roboto", sans-serif;
   background-color: white;
   color: var(--texst-color);
   letter-spacing: 0.03em;
+  width: 1600px;
 }
 .list-ul {
   list-style: none;
@@ -29,10 +32,9 @@ body {
 .p-header {
   outline: solid #ececec 1px;
 }
-.nav {
+.main-nav {
   display: flex;
   align-items: center;
-  /* background-color: crimson; */
 }
 
 /* logotype */
@@ -48,8 +50,10 @@ body {
   color: var(--booton-color);
 }
 /* Nav */
+
 .nav {
   display: flex;
+  align-items: center;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -57,14 +61,13 @@ body {
   display: flex;
   margin-left: 93px;
 }
-
 .site-nav .nav-item + .nav-item {
   margin-left: 50px;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
-.site-nav li {
+/* .site-nav li {
   outline: red solid;
-}
+} */
 .link,
 .contacts {
   /* display: flex; */
@@ -81,10 +84,10 @@ body {
 .nav-contact .contacts:not(:last-child) {
   margin-right: 50px;
 }
-.contacts {
-  /* display: flex; */
+/* .contacts {
+  display: flex;
   background-color: chartreuse;
-}
+} */
 .link:hover,
 .link:focus {
   color: var(--booton-color);
@@ -100,17 +103,22 @@ body {
 .contacts:hover {
   color: var(--booton-color);
 }
-/* ___hero___ */
+                 /* ___hero___ */
 .title {
   color: var(--title-color);
 }
 .hero {
-  background-color: var(--footer-header-backgraund);
-  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   margin-top: 0;
-  /* margin-bottom:94px; */
+/* margin-bottom:94px; */
+  background-color: var(--footer-header-backgraund);
+  color: rgb(255, 255, 255);
+  
+  
   text-align: center;
+  width: 1600px;
 }
 .title-hero {
   margin-top: 0;
@@ -146,6 +154,7 @@ body {
   width: 200;
   margin-top: 0;
   margin-bottom: 200px;
+  border-radius: 4px;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -182,8 +191,12 @@ body {
 
 /*___section____ */
 .section-pecul {
+  /* display: flex; */
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.list-pecul {
+  display: flex;
 }
 .title-pecul {
   font-weight: 700;
