@@ -23,7 +23,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -226,7 +226,7 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.do-item + .do-item{
+.do-item + .do-item {
   margin-left: 30px;
 }
 .title-do {
@@ -242,7 +242,7 @@ body {
   padding-bottom: 94px;
 }
 .title-team {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   margin-top: 30px;
@@ -254,7 +254,7 @@ body {
   margin-top: 0;
   margin-bottom: 0px;
 }
-.list-team+.list-team{
+.list-team + .list-team {
   margin-left: 30px;
 }
 .team-desc {
@@ -276,7 +276,7 @@ body {
   align-content: space-between;
 }
 .portfolio .p-item {
-  width: 370px;
+  width: ((100%-60px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -325,4 +325,4 @@ body {
 }
 .footer > .container > a {
   color: white;
- }
+}
