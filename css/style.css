@@ -19,6 +19,15 @@ body {
   margin: 0;
   display: flex;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -156,16 +165,17 @@ body {
 /* button porfolio */
 .btn-portfolio {
   display: flex;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
-  /* padding-bottom: 50px; */
+  /* padding: 6px 22px; */
+  justify-content: center;
 }
 .btn-portfolio .portfo-item + .portfo-item {
   margin-left: 8px;
 }
 .button-portfo {
   display: flex;
+  padding: 6px 22px;
   font-family: inherit;
   background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
@@ -200,7 +210,7 @@ body {
   margin-left: 30px;
 }
 .title-pecul {
-  /* font-weight: pecul-desclist-do700; */
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -233,14 +243,14 @@ body {
   margin-bottom: 50px;
 }
 .section-team {
+  /* margin-top: 0;
+  margin-bottom: 0; */
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 94px;
 }
 .title-team {
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
@@ -248,15 +258,13 @@ body {
 }
 .list-team {
   background-color: white;
-  margin-top: 0;
-  margin-bottom: 0px;
-}
+  }
 .list-team + .list-team {
   margin-left: 30px;
 }
 .desc-teams {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-desc {
   font-size: 14px;
@@ -266,15 +274,14 @@ body {
 }
 /* ____section portfolio____ */
 .portfo-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
-
 .portfolio .p-item {
   width: 370px;
   margin-right: 30px;
@@ -288,11 +295,11 @@ body {
   margin-bottom: 0;
 }
 .specific {
-  /* min-height: 110px; */
   padding: 20px 24px;
   outline: 1px solid #eeeeee;
 }
 .title-portfo {
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -326,4 +333,5 @@ body {
 }
 .footer > .container > a {
   color: white;
+  padding: 0;
 }
