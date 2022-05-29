@@ -115,8 +115,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
+  padding-bottom: 200px;
   margin-top: 0;
-  /* margin-bottom:94px; */
   background-color: var(--footer-header-backgraund);
   color: rgb(255, 255, 255);
 
@@ -140,9 +140,8 @@ p {
   top: 280px;
 }
 /*___ BOOtON ___*/
+
 .button-hero {
-  margin-top: 0;
-  margin-bottom: 200px;
   font-family: inherit;
   background-color: var(--booton-color);
   color: white;
@@ -250,15 +249,15 @@ p {
   background-color: #f5f4fa;
 }
 .title-team {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.19;
   text-align: center;
 }
 .list-team {
   background-color: white;
-  }
+}
 .list-team + .list-team {
   margin-left: 30px;
 }
@@ -268,7 +267,7 @@ p {
 }
 .team-desc {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.19;
   width: 270px;
   text-align: center;
 }
@@ -320,14 +319,19 @@ p {
 .footer-addres {
   font-style: normal;
   padding-top: 20px;
+  margin: 0; 
 }
 .footer-contacts {
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+.footer-contacts>pre{
+  margin: 0;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -336,4 +340,4 @@ p {
 .footer > .container > a {
   color: white;
   padding: 0;
-  }
+}
