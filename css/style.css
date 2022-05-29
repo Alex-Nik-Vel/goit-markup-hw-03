@@ -322,6 +322,8 @@ p {
   padding-top: 20px;
 }
 .footer-contacts {
+  display: block;
+  padding-top: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -334,4 +336,4 @@ p {
 .footer > .container > a {
   color: white;
   padding: 0;
-}
+  }
